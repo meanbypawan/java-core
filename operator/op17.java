@@ -1,9 +1,12 @@
+import java.util.Scanner;
 class TestMain{
-  public static void main(String arg[]){
-    byte a = 10;
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
     
-    //a = a + 5; // Loss conversion from int to byte
-    a += 5;
-    System.out.println(a); // 15
+    System.out.println("Enter Number...");
+    int n = sc.nextInt();
+    
+    String result = n%2 == 0 ? "Even" : "Odd";
+    System.out.println(result);
   }
 }

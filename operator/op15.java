@@ -1,39 +1,29 @@
-// conditional operator
 /*
-  Syntax:--
+  conditional operator
+  syntax:-
   
-  (condition/BE) ? expression 2 : expression 3;
-  
-  if condition is true the it will evaluate express-2
-  if condition is false then it will evaluate expression-3
+  (condition/BE) ? expression-2 : expression-3;
+   a > b
 */
+// a,b
 import java.util.Scanner;
 class TestMain{
-  public static void main(String arg[]){
-     Scanner sc = new Scanner(System.in);
-     
-     System.out.println("Enter 1st value");
-     int a = sc.nextInt();
-  
-     System.out.println("Enter 2nd value");
-     int b = sc.nextInt();
-     
-    //Error- (a > b) ? System.out.println(a) : System.out.println(b); 
-  
-    int x = (a>b) ? a : b;
-    System.out.println("Greate Value : "+x); 
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter 1st value....");
+    int x = sc.nextInt();
+    
+    System.out.println("Enter 2nd value....");
+    int y = sc.nextInt();
+    
+    /*
+    x > y ? System.out.println("Greater : "+x) : 
+               System.out.println("Greater : "+y);
+    */
+    
+     int  z = (x > y) ? x : y;
+     System.out.println("Greater : "+z);
+    
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

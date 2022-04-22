@@ -1,19 +1,15 @@
 class TestMain{
-  public static void main(String args[]){
-    int a,b,c,d;
-    a = 10;
-    b = 20;
-    c = 30;
-    d = 40;
+  public static void main(String arg[]){
+    int x = 20;
+    boolean y;
     
-    // To remove short-circuit behaviour use single pipe op.
-    boolean x = (a<b) | (++c>d);
-    
-    System.out.println(a);
-    System.out.println(b);
-    System.out.println(c); // 30
-    System.out.println(d);
-    System.out.println(x); // true
-    
+    //y = ++x > 20;
+    y = x++ > 20;
+    /*
+      y = 20 > 20
+      x = 21
+    */
+    System.out.println(x);
+    System.out.println(y);
   }
 }

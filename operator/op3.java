@@ -1,29 +1,35 @@
+// Increment , Decrement 
+// ++ (increment by 1), -- (decrement by 1)
 /*
-   Operators
-     1) Precedence
-     2) Associativity
-         a) Left ---> Right
-         b) Right --> Left
-         
-     a + b * c / d
+   Increment :-
+     a) Pre-increment
+        int x=20;
+        ++x;
+        
+        Pre-increment first increment the value by one
+        then assign
+        
+     b) Post-increment
+        int x = 20;
+        x++;
+        Post-increment first assign the value then increment
+        by one
+        
+   Decrement:-
+     a) Pre-decrement
      
-     a = 20; // Right---> Left     
+     b) Post-decrement  
 */
 class TestMain{
-  public static void main(String cheeku[]){
-     int a = 10;
-     int b = 10;
-     int c = 10;
-     int d = 10;
-     
-     boolean x = (a == b) == (c == d);
-     /*  
-                  (10==10)
-                     true == (c==d)
-                     true == (10 == 10)
-                     true == true
-                        true         
-     */
-     System.out.println(x);
+  public static void main(String args[]){
+    int x = 10,y;
+    y = ++x;
+    /*
+      x = 11
+      y = 11
+    */
+    
+    System.out.println("x : "+x+" y : "+y);
+    
   }
 }

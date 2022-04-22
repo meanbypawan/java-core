@@ -1,12 +1,11 @@
 class TestMain{
-  public static void main(String arg[]){
-     int x=5,y;
+  public static void main(String args[]){
+     int x=10;
+     int y;
      
-     //   x = 9
-     //    6 + 6   + 7   +   9
-     y = ++x + x++ + x++ + ++x; // x = 9
+      // x = x++; // No-change
+     y = x++;
      
-     System.out.println("x : "+x);
-     System.out.println("y : "+y);
+     System.out.println(x);
   }
 }

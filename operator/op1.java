@@ -1,25 +1,32 @@
-// Arithmetic Operations
-// + , -, *, /, %
+import java.util.Scanner;
+// Logical AND :- When we want both condition true
+// Logical OR :- When we want anyone condition true
+
+// Logical AND ShrotCircuit :- When first condition is false
+// Loical OR ShortCircuit :- When first condition is true
 class TestMain{
-  public static void main(String ars[]){
-     System.out.println("5/2 : "+(5/2)); // 2
-     System.out.println("2/5 : "+(2/5)); // 0
-     
-     System.out.println("5%2 : "+(5%2)); // 1
-     System.out.println("5.5%2 : "+(5.5%2)); // 1.5
-     System.out.println("-5%2 : "+(-5%2)); // -1
-     System.out.println("5%-2 : "+(5%-2)); // 1
-     System.out.println("-5%-2 : "+(-5%-2)); // -1
-     System.out.println("2%5 : "+(2%5)); // 2 (num < de)
-     System.out.println("99%100 : "+(99%100));// 99
-     //System.out.println("5/0 : "+(5/0)); // AE- Terminate 
-     System.out.println("5.5/0 : "+(5.5/0)); // Infinity
-     System.out.println("-5.5/0 : "+(-5.5/0)); // -Infinity
-     //System.out.println("5%0 : "+(5%0));
-     System.out.println("5.5%0 : "+(5.5%0));
-     System.out.println("At the end.......");
-     /*
-       integer / 0 :- Arithmetic Exception
-     */
+  public static void main(String arg[]){
+    int a,b,c,d;
+    boolean result;
+    Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Enter 4 values...");
+    a = sc.nextInt(); // 10
+    b = sc.nextInt(); // 20
+    c = sc.nextInt(); // 30
+    d = sc.nextInt(); // 40
+    
+    //result = (a > b) && (c < d);
+    result = (a<b) || (c>d);
+    /*
+           =  (10 < 20)
+           =   true || (c < d) 
+       result = true
+    */
+    System.out.println("a : "+a);
+    System.out.println("b : "+b);
+    System.out.println("c : "+c);
+    System.out.println("d : "+d);
+    System.out.println("Final Result : "+result);
   }
 }
